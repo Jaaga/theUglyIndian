@@ -14,7 +14,11 @@ class SessionController < ApplicationController
 
   def auth
   	@auth = params[:Authorization]
+  	user = User.new
+  	user.name = @auth
+  	user.save!
   	render json: @auth
+
   end
 
   def destroy
