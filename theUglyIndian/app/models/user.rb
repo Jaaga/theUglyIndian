@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 	
-	after_save :assign_username
+	# after_save :assign_username
 
 	def self.from_omniauth(auth)
     where(auth.slice(:provider, :uid)).first_or_initialize.tap do |user|
