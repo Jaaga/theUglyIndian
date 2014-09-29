@@ -13,9 +13,9 @@ class SessionController < ApplicationController
   end
 
   def auth
-  	@auth = params[:Authorization]
-  	User.create(name: @auth)
-  	render json: @auth
+  	# # @auth = params[]
+  	# User.create(name: @auth)
+  	render json: request.env.inspect
   end
 
   def destroy
