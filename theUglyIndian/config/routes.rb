@@ -7,6 +7,8 @@ TheUglyIndian::Application.routes.draw do
   get "session/destroy"  
   get 'auth/:provider/callback', to: 'session#create', via: [:post, :get] 
 
+  match "/api/android/auth", to: 'session#auth', via: [:post, :get]
+
   match '/', to: 'static_pages#index', via: 'get'
   root 'static_pages#index'
 

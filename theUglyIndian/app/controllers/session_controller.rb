@@ -1,4 +1,6 @@
 class SessionController < ApplicationController
+	skip_before_filter :verify_authenticity_token
+
 	def create
     user = User.from_omniauth(env["omniauth.auth"])
     if user.id.present?
@@ -8,6 +10,11 @@ class SessionController < ApplicationController
       session[:user_id] = nil
       redirect_to '/'
     end
+  end
+
+  def auth
+  	@auth = params[:Authorization]
+  	render json: @auth
   end
 
   def destroy
