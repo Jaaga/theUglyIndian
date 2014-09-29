@@ -3,6 +3,11 @@ TheUglyIndian::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+  get "session/create"
+  get "session/destroy"  
+  get 'auth/:provider/callback', to: 'session#create', via: [:post, :get] 
+
+  match '/', to: 'static_pages#index', via: 'get'
   root 'static_pages#index'
 
   # Example of regular route:
