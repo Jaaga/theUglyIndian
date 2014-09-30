@@ -1,3 +1,11 @@
+GIT
+  remote: git@github.com:Nerian/google-id-token.git
+  revision: c34185e807bb28b48c7b980a50eb37b2614bf3d7
+  specs:
+    google-id-token (1.2.0)
+      jwt
+      multi_json
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -140,6 +148,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 3.2.0.2)
   coffee-rails (~> 4.0.0)
+  google-id-token!
   jbuilder (~> 1.2)
   jquery-rails
   omniauth

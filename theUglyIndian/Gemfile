@@ -31,9 +31,13 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'bootstrap-sass', '~> 3.2.0.2'
 
+gem 'google-id-token', git: 'git@github.com:Nerian/google-id-token.git'
+
 gem 'omniauth'
 
 gem 'omniauth-google-oauth2'
+
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
