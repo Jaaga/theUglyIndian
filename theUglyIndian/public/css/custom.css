@@ -1,0 +1,19 @@
+.back-img{
+
+	background-image: url("../img/Clean-India.jpg");
+	background-repeat: no-repeat;
+}
+
+.description{
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+.spot-title-in-list{
+	color:white;
+	font-size: 1.2em;
+}		
+
+.date-time h2{
+	color: black;
+}

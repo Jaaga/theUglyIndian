@@ -1,0 +1,97 @@
+<!Doctype html>
+<html>
+<head>
+	<title>
+		TheUglyIndian
+	</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+
+<!--navbar Uglyindian -->
+	<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">The Ugly Indian project</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="initiate.html">Initiate a Spotfix</a></li>
+        <li><a href="upcoming.html" class="active">Upcoming Spotfixes</a></li>
+        <li><a href="my-spots.html">My Spotfixes</a></li>
+        <li><a href="index.html" type ="button" class="btn-danger">Logout</a></li>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+	</nav>
+<!-- nav bar finish -->
+
+<!-- jumbotron Metrics-->
+<div class="container-fluid">
+	<h2 class="text-center">Initiate a Spotfix</h2>
+
+  <div class="col-md-8 col-md-offset-2 well">
+    <form class="form-horizontal" role="form">
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Location</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail3" placeholder="Location of Spotfix">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Date & Time</label>
+        <div class="col-sm-10">
+          <input type="Email" class="form-control" id="inputPassword3" placeholder="Date and Time of Spotfix">
+        </div>
+      </div>
+
+       <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Volunteers Needed</label>
+        <div class="col-sm-10">
+          <input type="Email" class="form-control" id="inputPassword3" placeholder="No. Of Volunteers needed">
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Description</label>
+        <div class="col-sm-10">
+          <textarea  class="form-control" placeholder="Description of the Spotfix(mention financial help per person, if any)"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="file" class="col-sm-2 control-label">Upload images</label>
+        <div class="col-sm-10">
+          <input type="file" name="file" id="file">
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <a href="my-spots.html" class="btn btn-success">Initiate</a>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+</div>
+ <!-- container ends here -->
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>	
