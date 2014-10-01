@@ -1,8 +1,13 @@
 This app has a web client and an android client. The backend is being developed in ruby on rails.
 
+You can see the android app flow here- 
+https://popapp.in/projects/542c3ae76b208e6469aed461/preview 
+
+the web flow here-
+http://prank7.github.io/theuglyindian-html/
+
 The following description is the rough flow of the web client.
 
-You can see the android app flow here- https://popapp.in/projects/542c3ae76b208e6469aed461/preview 
 
 1. A user visits the site(starting with index.html), he can login to app using google oauth.
 2. After login he will reach his dashboard, in navigation bar of the dashboard there are options to 
